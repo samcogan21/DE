@@ -5,7 +5,7 @@ class Population:
     def __init__(self, size, bounds):
         self.size = size
         self.bounds = bounds
-        self.dim = len(bounds)
+        self.dim = len(bounds[0])
         self.individuals = self._initialize_population()
 
     def _initialize_population(self):
